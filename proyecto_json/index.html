@@ -4,6 +4,8 @@
         <title>mi primer json</title>
     </head>
     <body>
+
+        <ul id="personas"></ul>
         <script>
             var persona = {
                 //el objeto debe ir siempre entre comillas
@@ -43,6 +45,9 @@
                 console.log(personas[i]);
 
             }
+
+            document.getElementById('personas')
+            .innerHTML='personas van aqui';
         
         </script>
     </body>
