@@ -7,7 +7,7 @@
 
         <ul id="personas"></ul>
         <script>
-            var persona = {
+            /*var persona = {
                 //el objeto debe ir siempre entre comillas
                 "nombre":"alejandro",
                 "apellido": "buendia" ,
@@ -34,7 +34,7 @@
                 {"nombre":"maria","nickname":"bellota"},
                 {"nombre":"ines","nickname":"loki"},
                 {"nombre":"maria","nickname":"antuco"},
-                {"nombre":"luis","nickname":"luis123"}
+                {"nombre":"luis","nickname":"luisillo"}
 
             ];
             //si queremos ver la info por el html debemos crear un archivo .json
@@ -45,14 +45,50 @@
             
             for (var i= 0 ; i <personas.length; i++){
                 //imprime los nombres de cada objeto en el arreglo personas
-                salida+='<li>'+personas[i].nombre+'</li>';
+               // salida+='<li>'+personas[i].nombre+'</li>';
+               //otra manera de imprimir los objetos es con interpolacion
+               //salida += '<li>'+'zag su nickname es alejandro'+'</li>';
+                salida += `<li>${personas[i].nombre} su nickname es ${personas[i].nickname}</li>`;
                 //console.log(personas[i]);
 
             }
 
             document.getElementById('personas')
             .innerHTML=salida;
-            //.innerHTML='personas van aqui';
+            //.innerHTML='personas van aqui';*/
+
+            var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       
+       
+       //var respuesta = xhttp.responseText;
+       //vamos a convertir esto a json
+       //le asigno el string que voy  a rebibir la respuesta del servidor json.parse
+       var respuesta = JSON.parse(xhttp.responseText);
+       //console.log(respuesta);
+       var personas = respuesta.personas;// revisar esto luego 
+
+       var salida =''; //variable que no recibe nada
+
+       for (var i= 0 ; i <personas.length; i++){
+                //imprime los nombres de cada objeto en el arreglo personas
+               // salida+='<li>'+personas[i].nombre+'</li>';
+               //otra manera de imprimir los objetos es con interpolacion
+               //salida += '<li>'+'zag su nickname es alejandro'+'</li>';
+                salida += `<li>${personas[i].nombre} su nickname es ${personas[i].nickname}</li>`;
+                //console.log(personas[i]);
+
+            }
+
+            document.getElementById('personas')
+            .innerHTML=salida;
+
+    }
+};
+
+xhttp.open("GET", "personas.json", true);
+xhttp.send();
         
         </script>
     </body>
