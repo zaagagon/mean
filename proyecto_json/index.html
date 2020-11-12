@@ -41,13 +41,18 @@
             //imprimir el primer indice 0
             console.log(personas[0].nombre);
 //creamos un for para recorrer el array y utilizamos la funcion lenght
+            var salida =''; //variable que no recibe nada
+            
             for (var i= 0 ; i <personas.length; i++){
-                console.log(personas[i]);
+                //imprime los nombres de cada objeto en el arreglo personas
+                salida+='<li>'+personas[i].nombre+'</li>';
+                //console.log(personas[i]);
 
             }
 
             document.getElementById('personas')
-            .innerHTML='personas van aqui';
+            .innerHTML=salida;
+            //.innerHTML='personas van aqui';
         
         </script>
     </body>
