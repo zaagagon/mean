@@ -1,0 +1,30 @@
+//creamos el documento package.json
+archivo que contiene todos los metadatos del proyecto
+npm init --yes
+
+Apartir de aqui instalamos las dependencias de nuestro proyecto
+
+creamos las carpetas
+
+y vamos a instalar dos modulos metadatos
+npm i ejs body-parser
+
+ahora vamos instalar el modulo
+npm install nodemon -D // para instalarlo como dependencia desarrollo es decir mi proyecto no depende de ello
+
+
+creamos el comando start en nuestro package json
+"start":"node app.js"
+ahora solo es digitar npm start para ejecutar el archivo 
+
+comando para verificar los modulos instalados en nuestro proyecto
+sh-3.2# npm ls --depth 0
+server_express@1.0.0 /Users/zagagon/Desktop/codigo_github/zagagon/mean/server_express
+├── body-parser@1.19.0
+├── ejs@3.1.5
+├── express@4.17.1
+└── nodemon@2.0.6
+
+salia errro para ejecutar el comando nodemon run dev
+se solucionon instalando de manera global el modulo
+npm install -g nodemon
