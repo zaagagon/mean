@@ -1,0 +1,16 @@
+ 1012  git config --get remote.origin.url
+ 1013  git remote rm origin 
+ 1014  git remote -v
+ 1015  git remote add origin git@github.com:zaagagon/mean.git\n
+ 1016  git status
+ 1017  git add .
+ 1018  git commit -m "prueba de exito"
+ 1019  git push
+ 1020  git push -u origin master
+ 1021  git push -u origin master
+ 1022  git push
+ 1023  git push --set-upstream origin master
+ 1024  git push
+ 1025  ssh-add ~/.ssh/id_rsa
+ 1026  git push origin master
+ 1027  history
