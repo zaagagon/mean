@@ -12,7 +12,8 @@
     ],
     "galaxia":[
         {"planeta":"marte"},
-        { "planeta":"neptuno"}
+        { "planeta":"neptuno"},
+        {"planeta":"jupiter"}
 
     ]
 }
