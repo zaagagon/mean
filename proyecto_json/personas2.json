@@ -6,7 +6,8 @@
         {"nombre":"maria","nickname":"antuco"},
         {"nombre":"luis","nickname":"luis123"},
         {"nombre":"alejandro2","nickname":"bellota34"},
-        {"nombre":"chaurra","nickname":"manpo"}
+        {"nombre":"chaurra","nickname":"manpo"},
+        {"nombre":"","":""}
 
     ]
 }
