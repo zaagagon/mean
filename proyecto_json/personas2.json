@@ -9,5 +9,10 @@
         {"nombre":"chaurra","nickname":"manpo"},
         {"nombre":"rebeca","nickname":"medusa"}
 
+    ],
+    "galaxia":[
+        {"planeta":"marte"},
+        { }
+
     ]
 }
