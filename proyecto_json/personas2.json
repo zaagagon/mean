@@ -15,9 +15,10 @@
         { "planeta":"neptuno"},
         {"planeta":"jupiter"},
         {"planeta":"venus"},
-        {"":"mercurio"},
-        {"":"saturno"},
-        {"":"tierra"}
+        {"planeta":"mercurio"},
+        {"planeta":"saturno"},
+        {"":"tierra"},
+        {"":"urano"}
 
     ]
 }
