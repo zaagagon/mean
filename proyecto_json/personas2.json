@@ -20,5 +20,8 @@
         {"planeta":"tierra"},
         {"planeta":"urano"}
 
+    ],
+    "continentes":[
+        {}
     ]
 }
