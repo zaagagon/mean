@@ -11,6 +11,7 @@ const   app= express();
 //con estas tres lineas de codigo ya tenemos un servidor express funcionando
 
 //settings
+//configuraciones
 //configuramos el puerto
 app.set('port', process.env.PORT || 4000);
 //configuramos las vistas
