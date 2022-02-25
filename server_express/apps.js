@@ -19,7 +19,7 @@ app.set('views',path.join(__dirname,'views'));
 //motor de plantillas ejs
 app.set('view engine','ejs');
 
-//middlewares
+//middlewares -- que es 
 //creamos una funcion flecha
 app.use((req,res,next)=>{
     console.log(`${req.url}-${req.method}`);
